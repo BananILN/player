@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mp3tag.js@3.11.2/dist/mp3tag.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="dropzone">
+            <p>Перетащите или <button onclick="chooseFile()">выберите</button> файл</p>
+        </div>
+
+        <input type="text" id="linkInput" onchange="procceslink()" placeholder="Вставьте сылку на файл">
+
+        <div class="playerContainer">
+            <div class="playerView">
+                <img id="cover"/>
+                <span id="artist"></span>
+                -
+                <span id="song"></span>
+            </div>
+            <audio id="player" controls></audio>
+        </div>
+    </div>
+    
+</body>
+</html>
